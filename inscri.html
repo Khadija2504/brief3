@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitzone</title>
+    <link rel="stylesheet" href="css/inscri.css">
+    <link rel="icon" type="image/png" href="pik/icon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="back" src="pik/inscription2.jpg" alt="sportif" />
+            <div class="under"></div>
+        </div>
+        <h2 class="text1">Inscription</h2>
+        <div class="all">
+            <div class="menu-toggle">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <div class="navbar">
+                <a href="index.html"><div class="home1">Home</div></a>
+                <a href="index.html" id="downloadButton"><div class="programme1">programmes</div></a>
+                <a href="inscri.html"><div class="inscri1">inscription</div></a>
+                <a href="FAQ.html"><div class="FAQ1">FAQ</div></a>
+                <a href="galrie.html"><div class="galrie">Gallre</div></a>
+            </div>
+            <div class="icon">
+                <img class="icon1" src="pik/icon.png" alt="icon" />
+            </div>
+        </div>
+        <div class="formulair">
+            <form id="registration-form">
+                <input type="text" id="first-name" placeholder="First name" name="first-name" required>
+                <br />
+                <input type="text" id="last-name" placeholder="Last name" name="last-name" required>
+                <br>
+                <input type="email" id="email" placeholder="Email address" name="email" required>
+                <br>
+                <input type="text" id="cin" placeholder="CIN" name="cin" required>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                <input type="submit" value="Inscription">
+            </form>
+        </div>
+    </header>
+    <div class="chois2">
+        <div class="all3"></div>
+        <div class="footer"></div>
+        <img class="icon2" src="pik/icon.png" alt="icon" />
+        <div class="titles">
+            <h3 class="title33">DISCOVER HIGH-QUALITY GEAR AND APPAREL</h3>
+            <h3 class="title22">Your Partner in Youth Fitness and Fun!</h3>
+            <br>
+            <br>
+            <p class="para">At FITZONE, we are more than just a sports training center; we are a community of experienced sports instructors and enthusiasts who are passionate about nurturing the physical and mental well-being of children. Our mission is to provide top-quality, well-rounded, and organized training in a wide range of activities, all delivered by certified trainers in their respective fields.</p>
+        </div>
+        <div class="spaces">
+            
+        </div>
+        <div class="pages">
+            <a href="inscri.html"><p class="inscri3">Inscription</p></a>
+            <p class="page">Pages:</p>
+            <a href="index.html"><p class="home2">Home</p></a>
+            <a href="index.html"><p class="programmes">Programmes</p></a>
+            <a href="FAQ.html"><p class="FAQ2">SAQ</p></a>
+        </div>
+        <div class="contactus">
+            
+            <a href="fitzone@gmail.com"><p class="email">fitzone@gmail.com</p></a>
+            <p class="contact">Contact</p>
+            <a href="+121-12345678"><p class="number1">+121-12345678</p></a>
+            <a href="+121-01010101"><p class="number2">+121-01010101</p></a>
+        </div>
+        <p class="titre5">Subscribe our newsletter to get our latest update & news</p>
+        <h class="titre6">Updates</h>
+        <div class="spacefooter">
+            <form>
+                <input type="email" placeholder="Write Your Email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="litlfooter"></div>
+        <div class="rights">© 2023 | All rights reserved by Fitzone</div>
+        <div class="sociel">
+                <a href="https//:facebook.com"><img class="facebook" src="pik/image 2.png" alt="facebook" /></a>
+                <a href="https//:instagram.com"><img class="insta" src="pik/Rectangle 2.png" alt="instagram" /></a>
+                <a href="https//:whatsapp.com"><img class="whatsapp" src="pik/image 3.png" alt="whatsapp" /></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("registration-form");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const cin = document.getElementById("cin").value;
+            const phone = document.getElementById("phone").value;
+
+            const nameRegex = /^[a-zA-Z]{3,}$/;
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            const cinRegex = /^\d{5}$/;
+            const phoneRegex = /^\+212\d{9}$/;
+
+            if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+                alert("First name and last name must have at least 3 characters and contain only letters.");
+            } else if (!emailRegex.test(email)) {
+                alert("Invalid email address.");
+            } else if (!cinRegex.test(cin)) {
+                alert("Invalid CIN (5 digits expected).");
+            } else if (!phoneRegex.test(phone)) {
+                alert("Invalid phone number (must start with +212 and have 9 digits).");
+            } else {
+                alert("You're registered successfully!");
+                alert("We will send you an email to complete your registration.");
+            }
+        });
+    });
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navList = document.querySelector(".navbar");
+
+            menuToggle.addEventListener("click", function () {
+                    navList.classList.toggle("active");
+            });
+        });
+    </script>
+    
+</body>
+</html>
