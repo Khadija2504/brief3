@@ -17,3 +17,4 @@ Bonus :
 En tant que concepteur, j'ai créé une maquette de la page de galerie, avec un carrousel d'images mettant en avant l'environnement dynamique de FitZone. Cette page visuellement engageante permettait aux visiteurs de s'immerger dans l'expérience vibrante de FitZone.
 
 Ensuite, en tant que développeur, j'ai transformé cette maquette de galerie en une page web entièrement fonctionnelle en utilisant HTML, CSS et JavaScript. La page comportait une galerie d'images et un carrousel d'images facilement navigable, garantissant une expérience captivante pour les visiteurs, que ce soit sur desktop ou sur mobile.
+fichier de Figma :   https://www.figma.com/file/SjQ8RWH5I3EsE9QoFpi8IW/Brief3?type=design&node-id=0%3A1&mode=design&t=rXfhiR5cgH1jzKCy-1
